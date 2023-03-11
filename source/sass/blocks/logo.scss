@@ -1,0 +1,18 @@
+.logo {
+  width: 215px;
+  height: 55px;
+
+  @media (max-width: 767px) {
+    width: 35px;
+    height: 35px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0,7;
+  }
+
+  &:active {
+    opacity: 0,3;
+  }
+}
