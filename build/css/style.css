@@ -1386,16 +1386,15 @@ button,
 }
 
 .footer {
+  width: 100%;
   background-color: #041827;
-  max-height: 280px;
 }
 
 .footer__wrapper {
+  max-height: 280px;
   padding-left: 0;
   padding-top: 50px;
   padding-bottom: 55px;
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1559,39 +1558,46 @@ button,
   fill: #f2f5f7;
 }
 
-.accordion {
-  max-width: 320px;
-  margin: 0 auto 50px auto;
-}
+/* @mixin hover-focus {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        @content;
+      }
+    }
 
-.accordion .accordion {
-  width: 90%;
-  margin: 0 auto;
-}
+    &.focus-visible:focus {
+      @content;
+    }
+  }
+*/
 
-.accordion__element:last-child {
-  margin-bottom: 0;
-}
+/*  @include hover-focus {
+      opacity: 0.8;
+    }
+*/
 
-.accordion__element {
-  margin-bottom: 34px;
-  padding: 10px;
-}
+/*@mixin hover {
+    @media (hover: hover) {
+      &:hover:not(.focus-visible) {
+        @content;
+      }
+    }
+  }
+*/
 
-.accordion__element.is-active > .accordion__button {
-  opacity: 0.5;
-}
+/*@mixin focus {
+    &.focus-visible:focus {
+      @content;
+    }
+  }
+*/
 
-.accordion__button {
-  width: 100%;
-  padding: 10px;
-  text-transform: uppercase;
-  cursor: pointer;
-}
-
-.accordion__wrapper {
-  padding: 10px;
-}
+/*@mixin active {
+    &.focus-visible:active {
+      @content;
+    }
+  }
+*/
 
 @media (min-width: 768px) {
   .footer__button {
@@ -1714,7 +1720,7 @@ button,
 
   .footer__wrapper {
     width: 100%;
-    min-width: 320px;
+    max-width: 320px;
     padding-top: 35px;
     padding-bottom: 35px;
   }
@@ -1729,6 +1735,14 @@ button,
 
   .footer__navigation-wrapper {
     display: block;
+  }
+
+  .footer__title {
+    display: none;
+  }
+
+  .footer__link {
+    font-size: 14px;
   }
 }
 
