@@ -12,15 +12,16 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 15px 35px 0;
+  padding: 30px 65px 35px 0;
 
 
   @media (max-width: 1023px) {
+    max-width: 768;
     padding: 20px 70px 25px 50px;
   }
 
   @media (max-width: 767px) {
-    min-width: 320px;
+    max-width: 320px;
     padding: 10px 35px 20px 26px;
   }
 }
@@ -33,10 +34,10 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 
+
   @media (max-width: 1023px) {
     gap: 20px;
   }
-
 }
 
 .main-header__list-item {
@@ -44,14 +45,16 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
+
 }
 
 .main-header__link {
   color:$color-alice-blue;
-  padding-left: 35px;
+  padding: 1px 20px 1px 38px;
   display: block;
   box-sizing: border-box;
   position: relative;
+  // min-width: 225px;
 
 
   @media (max-width: 1023px) {
@@ -74,7 +77,7 @@
 
 .main-header__icon {
   position: absolute;
-  left: 0;
+  left: 5px;
   display: block;
   width: 21px;
   height: 20px;
@@ -96,16 +99,16 @@
   font-family: $ff-roboto-condensed;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 17px;
   text-align: center;
-  letter-spacing: 0.05em;
+  letter-spacing: -0.05em;
   text-transform: uppercase;
   color: $color-alice-blue;
   border: 1px solid $color-alice-blue;
   background-color: transparent;
   border-radius: 3px;
   padding: 10px 15px;
-  // width: 160px; шрифт Arial((( не соответствует, происходит перенос строки
+  min-width: 160px;
 
   @media (max-width: 1023px) {
     display: none;
