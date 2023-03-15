@@ -13,7 +13,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 65px 35px 0;
+  padding: 30px 65px 35px 50px;
 
 
   @media (max-width: 1023px) {
@@ -102,7 +102,7 @@
   font-size: 14px;
   line-height: 17px;
   text-align: center;
-  letter-spacing: -0.05em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: $color-alice-blue;
   border: 1px solid $color-alice-blue;

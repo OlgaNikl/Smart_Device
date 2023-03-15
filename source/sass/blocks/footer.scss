@@ -2,35 +2,25 @@
   width: 100%;
   background-color: $color-black-pearl;
 
-
-  @media (max-width: 1023px) {
-    max-height: 465px;
-  }
-
-  @media (max-width: 767px) {
-    max-height: none;
-  }
 }
 
 .footer__wrapper {
-  max-height: 280px;
-  padding-left: 0;
   padding-top: 50px;
   padding-bottom: 55px;
   display: flex;
 
   @media (max-width: 1023px) {
-    width: 100%;
     padding: 50px 45px 65px 50px;
     flex-direction: column;
     gap: 35px;
+    max-height: 100%;
   }
 
   @media (max-width: 767px) {
-    width: 100%;
     max-width: 320px;
     padding-top: 35px;
     padding-bottom: 35px;
+    max-height: 100%;
   }
 }
 
@@ -65,7 +55,7 @@
   }
 
   @media (max-width: 767px) {
-    display: block;
+    flex-direction: column;
   }
 }
 
@@ -73,7 +63,6 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  // max-width: 470px;
 }
 
 .footer__social-wrapper {
@@ -81,13 +70,13 @@
 }
 
 .footer__navigation-list-wrapper {
-  min-width: 470px;
+  // min-width: 470px;
   display: flex;
   flex-direction: row;
   gap: 30px;
 
   @media (max-width: 1023px) {
-    min-width: 220px;
+    // min-width: 220px;
     flex-direction: column;
     gap: 6px;
   }
@@ -105,7 +94,7 @@
   text-transform: uppercase;
   text-align: left;
   margin-bottom: 16px;
-  padding-top: 7px;
+  padding-top: 5px;
   padding-bottom: 5px;
 
   @media (max-width: 767px) {
@@ -117,29 +106,30 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
 .footer__navigation-item {
-  max-width: 220px;
-  // width: 50%;
+  min-width: 220px;
   list-style: none;
   margin: 0;
-  // margin-bottom: 6px;
 }
 
 .footer__contacts-content {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  min-width: 345px;
+  // min-width: 345px;
   gap: 6px;
 
   @media (max-width: 1023px) {
-    max-width: 320px;
+    // min-width: 320px;
+  }
+
+  @media (max-width: 767px) {
+    // min-width: 288px;
   }
 }
 
@@ -152,10 +142,15 @@
   line-height: 135%;
   text-align: left;
   font-style: normal;
+  // min-width: 345px;
+
+  @media (max-width: 1023px) {
+    min-width: 320px;
+  }
 
   @media (max-width: 767px) {
     font-size: 14px;
-
+    min-width: 288px;
   }
 
 }

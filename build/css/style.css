@@ -1307,7 +1307,7 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 30px 65px 35px 0;
+  padding: 30px 65px 35px 50px;
 }
 
 .main-header__list {
@@ -1361,7 +1361,7 @@ button,
   font-size: 14px;
   line-height: 17px;
   text-align: center;
-  letter-spacing: -0.05em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   color: #f2f5f7;
   border: 1px solid #f2f5f7;
@@ -1391,8 +1391,6 @@ button,
 }
 
 .footer__wrapper {
-  max-height: 280px;
-  padding-left: 0;
   padding-top: 50px;
   padding-bottom: 55px;
   display: -webkit-box;
@@ -1433,7 +1431,6 @@ button,
 }
 
 .footer__navigation-list-wrapper {
-  min-width: 470px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1456,7 +1453,7 @@ button,
   text-transform: uppercase;
   text-align: left;
   margin-bottom: 16px;
-  padding-top: 7px;
+  padding-top: 5px;
   padding-bottom: 5px;
 }
 
@@ -1464,7 +1461,6 @@ button,
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1476,7 +1472,7 @@ button,
 }
 
 .footer__navigation-item {
-  max-width: 220px;
+  min-width: 220px;
   list-style: none;
   margin: 0;
 }
@@ -1491,7 +1487,6 @@ button,
   flex-direction: column;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  min-width: 345px;
   gap: 6px;
 }
 
@@ -1558,6 +1553,154 @@ button,
   fill: #f2f5f7;
 }
 
+.main__section {
+  background-color: #ebebeb;
+  background-image: url("/img/main-background.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main__wrapper {
+  margin: 0 auto;
+  padding-top: 305px;
+  padding-bottom: 280px;
+  padding-left: 125px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.main__title {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 94px;
+  letter-spacing: -0.07em;
+  text-transform: uppercase;
+  color: #f2f5f7;
+  margin: 0;
+  margin-bottom: 30px;
+}
+
+.main__text {
+  width: 625px;
+  font-family: "PT Mono", "Courier New", monospace;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 34px;
+  color: #f2f5f7;
+  margin: 0;
+  margin-bottom: 48px;
+}
+
+.main__link {
+  width: 410px;
+  padding: 15px 20px;
+  background-color: #00b2ff;
+  border-radius: 3px;
+  color: #f2f5f7;
+}
+
+.main__link-text {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+
+.main__link-text-mobile {
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: center;
+  line-height: 16px;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+}
+
+.advantages {
+  background-color: #f2f5f7;
+}
+
+.advantages__wrapper {
+  padding: 120px 0;
+}
+
+.advantages__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 32px;
+  -moz-column-gap: 32px;
+  column-gap: 32px;
+  row-gap: 30px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.advantages__item {
+  padding: 40px 45px 35px;
+  border: 1px solid #ebebeb;
+  position: relative;
+  max-height: 300px;
+}
+
+.advantages__item::before {
+  content: "";
+  width: 5px;
+  height: 300px;
+  background-color: #00b2ff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.advantages__icon {
+  width: 35px;
+  height: 35px;
+  fill: #00b2ff;
+  margin-bottom: 16px;
+}
+
+.advantages__title {
+  margin: 0;
+  margin-bottom: 14px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: -0.07;
+  color: #00b2ff;
+  text-align: left;
+}
+
+.advantages__description {
+  margin: 0;
+  margin-bottom: 30px;
+  font-family: "PT Mono", "Courier New", monospace;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 135%;
+  color: #041827;
+}
+
+.advantages__description--detective {
+  margin-bottom: 60px;
+}
+
+.advantages__description--tag {
+  margin-bottom: 60px;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1603,11 +1746,15 @@ button,
   .footer__button {
     display: none;
   }
+
+  .main__link-text-mobile {
+    display: none;
+  }
 }
 
 @media (max-width: 1023px) {
   .container {
-    padding: 0 24px;
+    padding: 0 50px;
   }
 
   .main-header__wrapper {
@@ -1637,18 +1784,14 @@ button,
     display: none;
   }
 
-  .footer {
-    max-height: 465px;
-  }
-
   .footer__wrapper {
-    width: 100%;
     padding: 50px 45px 65px 50px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
     gap: 35px;
+    max-height: 100%;
   }
 
   .footer__header-wrapper {
@@ -1673,7 +1816,6 @@ button,
   }
 
   .footer__navigation-list-wrapper {
-    min-width: 220px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -1681,8 +1823,61 @@ button,
     gap: 6px;
   }
 
-  .footer__contacts-content {
-    max-width: 320px;
+  .footer__link {
+    min-width: 320px;
+  }
+
+  .footer__social-wrapper {
+    padding-left: 0;
+  }
+
+  .main__section {
+    background-image: url("/img/main-background-tablet.jpg");
+    background-size: cover;
+  }
+
+  .main__wrapper {
+    padding-top: 180px;
+    padding-bottom: 205px;
+    padding-left: 52px;
+    position: relative;
+  }
+
+  .main__title {
+    font-size: 64px;
+    line-height: 75px;
+    letter-spacing: -0.07em;
+    margin-bottom: 20px;
+  }
+
+  .main__text {
+    margin: 0;
+  }
+
+  .main__link {
+    position: absolute;
+    top: 380px;
+    left: 95px;
+  }
+
+  .main__link-text {
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+  }
+}
+
+@media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
+  .main__section {
+    background-image: url("/img/main-background-tablet@2x.jpg");
+  }
+}
+
+@media (max-width: 768px) {
+  .main__link-text {
+    display: none;
   }
 }
 
@@ -1714,15 +1909,11 @@ button,
     height: 35px;
   }
 
-  .footer {
-    max-height: none;
-  }
-
   .footer__wrapper {
-    width: 100%;
     max-width: 320px;
     padding-top: 35px;
     padding-bottom: 35px;
+    max-height: 100%;
   }
 
   .footer__header-wrapper {
@@ -1734,7 +1925,10 @@ button,
   }
 
   .footer__navigation-wrapper {
-    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 
   .footer__title {
@@ -1743,6 +1937,36 @@ button,
 
   .footer__link {
     font-size: 14px;
+    min-width: 288px;
+  }
+
+  .main__section {
+    background-image: url("/img/main-background-mobile.jpg");
+    background-size: cover;
+  }
+
+  .main__wrapper {
+    padding: 150px 25px 280px;
+    max-width: 320px;
+  }
+
+  .main__title {
+    width: 270px;
+    font-size: 36px;
+    line-height: 42px;
+  }
+
+  .main__text {
+    font-size: 14px;
+    line-height: 22px;
+    width: 270px;
+  }
+
+  .main__link {
+    left: 25px;
+    top: 330px;
+    padding: 10px 30px;
+    width: 270px;
   }
 }
 
@@ -1809,6 +2033,12 @@ button,
   }
 }
 
+@media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
+  .main__section {
+    background-image: url("/img/main-background-mobile@2x.jpg");
+  }
+}
+
 @media (hover: hover) {
   .btn:hover:not(.focus-visible) {
     opacity: 0.8;
@@ -1820,5 +2050,11 @@ button,
 
   .custom-select__item:hover:not(.focus-visible) {
     background-color: rgba(0, 0, 0, 0.4);
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
+  .main__section {
+    background-image: url("/img/main-background@2x.jpg");
   }
 }
