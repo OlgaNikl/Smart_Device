@@ -5,7 +5,6 @@
   left: 0;
   z-index: 3;
   background: linear-gradient(180deg, #041827 84.9%, rgba(4, 24, 39, 0) 100%);
-
 }
 
 .main-header__wrapper {
@@ -17,13 +16,13 @@
 
 
   @media (max-width: 1023px) {
-    max-width: 768;
+    // max-width: 768;
     padding: 20px 70px 25px 50px;
   }
 
   @media (max-width: 767px) {
-    max-width: 320px;
-    padding: 10px 35px 20px 26px;
+    // max-width: 320px;
+    padding: 10px 25px 20px 25px;
   }
 }
 
@@ -38,6 +37,10 @@
 
   @media (max-width: 1023px) {
     gap: 20px;
+  }
+
+  @media (max-width: 767px) {
+    margin-right: 10px;
   }
 }
 

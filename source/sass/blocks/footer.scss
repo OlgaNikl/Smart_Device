@@ -17,10 +17,12 @@
   }
 
   @media (max-width: 767px) {
-    max-width: 320px;
+    // min-width: 320px;
     padding-top: 35px;
     padding-bottom: 35px;
     max-height: 100%;
+    gap: 24px;
+    box-sizing: border-box;
   }
 }
 
@@ -40,8 +42,10 @@
   }
 
   @media (max-width: 767px) {
+    max-width: 270px;
     flex-direction: column;
     gap: 15px;
+    margin: 0 auto;
   }
 
 }
@@ -63,6 +67,7 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
 .footer__social-wrapper {
@@ -124,12 +129,14 @@
   // min-width: 345px;
   gap: 6px;
 
+
   @media (max-width: 1023px) {
     // min-width: 320px;
   }
 
   @media (max-width: 767px) {
     // min-width: 288px;
+    gap: 12px
   }
 }
 
@@ -159,8 +166,79 @@
   line-height: 25px;
 }
 
+@media (max-width: 767px) {
+  .footer__navigation::before {
+    content: "";
+    width: 345px;
+    height: 1px;
+    background-color: $color-alice-blue;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: -25px;
+  }
+
+  .footer__navigation::after {
+    content: "";
+    width: 345px;
+    height: 1px;
+    background-color: $color-alice-blue;
+    opacity: 0.7;
+    position: absolute;
+    bottom: 0;
+    left: -25px;
+  }
+}
+
+.footer__contacts {
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .footer__contacts::after {
+    content: "";
+    width: 345px;
+    height: 1px;
+    background-color: $color-alice-blue;
+    opacity: 0.7;
+    position: absolute;
+    bottom: 0;
+    left: -25px;
+  }
+}
+
 .footer__button {
   @media (min-width: 768px) {
     display: none;
   }
+}
+
+.footer__button {
+  @media (max-width: 767px) {
+    font-family: $ff-roboto-condensed;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-align: left;
+    color: $color-default-white;
+    background-color: transparent;
+    position: relative;
+  }
+}
+
+.footer__button::after {
+  content: "";
+  background-image: url(../../img/svg/union.svg);
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  right: -10px;
+}
+
+.footer__button:hover,
+.footer__button:focus {
+  opacity: 0.5;
 }

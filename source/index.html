@@ -15,10 +15,10 @@
             <a class="main-header__logo logo" href="index.html">
               <picture>
                 <source media="(max-width:767px)" srcset="img/svg/logo-mobile.svg">
-                <img class="logo__image" src="img/svg/logo.svg" width="215" height="55" alt="Логотип Smart Device умные технологии.">
+                <img class="logo__image" src="img/svg/logo.svg" width="215" height="55" alt="Логотип Смарт Девайс - умные технологии.">
               </picture>
             </a>
-            <ul class="main-header__list contacts">
+            <ul class="main-header__list">
               <li class="main-header__list-item">
                 <a class="main-header__link main-header__link--email" href="mailto:info@sd.ru" aria-label="Наш e-mail.">
                   <svg class="main-header__icon" width="21" heigth="20">
@@ -44,7 +44,7 @@
           <div class="main__wrapper container">
             <h2 class="main__title">Печатные платы</h2>
             <p class="main__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-            <a class="main__link" href="#">
+            <a class="main__link" href="#question-block">
               <span class="main__link-text">Получить бесплатную консультацию</span>
               <span class="main__link-text-mobile">бесплатная консультация</span>
             </a>
@@ -55,46 +55,38 @@
             <h2 class="visually-hidden">Наши преимущества.</h2>
               <ul class="advantages__list">
                 <li class="advantages__item">
-                  <a class="advantages__link">
-                    <svg class="advantages__icon" width="35" heigth="35">
-                      <use xlink:href="img/sprite.svg#stopwatch"></use>
-                    </svg>
-                    <h3 class="advantages__title">Оперативные сроки </h3>
-                    <p class="advantages__description">Усовершенствованная логистическая система позволяет
-                      нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки
-                    </p>
-                  </a>
+                  <svg class="advantages__icon" width="35" heigth="35">
+                    <use xlink:href="img/sprite.svg#stopwatch"></use>
+                  </svg>
+                  <h3 class="advantages__title">Оперативные сроки </h3>
+                  <p class="advantages__description">Усовершенствованная логистическая система позволяет
+                    нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки
+                  </p>
                 </li>
                 <li class="advantages__item">
-                  <a class="advantages__link">
-                    <svg class="advantages__icon" width="35" heigth="35">
-                      <use xlink:href="img/sprite.svg#hired"></use>
-                    </svg>
-                    <h3 class="advantages__title">Крупные поставщики</h3>
-                    <p class="advantages__description">Нашими поставщиками являются такие крупные
-                      мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспечивает хорошее качество нашей продукции.
-                    </p>
-                  </a>
+                  <svg class="advantages__icon" width="35" heigth="35">
+                    <use xlink:href="img/sprite.svg#hired"></use>
+                  </svg>
+                  <h3 class="advantages__title">Крупные поставщики</h3>
+                  <p class="advantages__description advantages__description--hired">Нашими поставщиками являются такие крупные
+                    мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспечивает хорошее качество нашей продукции.
+                  </p>
                 </li>
-                <li class="advantages__item">
-                  <a class="advantages__link">
-                    <svg class="advantages__icon" width="35" heigth="35">
-                      <use xlink:href="img/sprite.svg#detective"></use>
-                    </svg>
-                    <h3 class="advantages__title">Полная конфиденциальность</h3>
-                    <p class="advantages__description advantages__description--detective">По желанию клиента  мы обеспечиваем полную конфиденциальность.
-                    </p>
-                  </a>
+                <li class="advantages__item advantages__item--detective">
+                  <svg class="advantages__icon" width="35" heigth="35">
+                    <use xlink:href="img/sprite.svg#detective"></use>
+                  </svg>
+                  <h3 class="advantages__title advantages__title--detective">Полная конфиденциальность</h3>
+                  <p class="advantages__description advantages__description--detective">По желанию клиента&emsp;мы обеспечиваем полную конфиденциальность.
+                  </p>
                 </li>
-                <li class="advantages__item">
-                  <a class="advantages__link">
-                    <svg class="advantages__icon" width="35" heigth="35">
-                      <use xlink:href="img/sprite.svg#tag"></use>
-                    </svg>
-                    <h3 class="advantages__title">Персонализация стоимости</h3>
-                    <p class="advantages__description advantages__description--tag">Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.
-                    </p>
-                  </a>
+                <li class="advantages__item advantages__item--tag">
+                  <svg class="advantages__icon" width="35" heigth="35">
+                    <use xlink:href="img/sprite.svg#tag"></use>
+                  </svg>
+                  <h3 class="advantages__title advantages__title--tag">Персонализация стоимости</h3>
+                  <p class="advantages__description advantages__description--tag">Мы&emsp;подбираем определенную&nbsp;фабрику, поставщиков,&nbsp;вид доставки, чтобы установить ту цену, которая Вас устраивает.
+                  </p>
                 </li>
               </ul>
           </div>
@@ -102,24 +94,25 @@
         <section class="about">
           <div class="about__wrapper container">
             <h2 class="about__title">О компании</h2>
-            <p class="about__text">Мы поставляем электронные комплектующие,
-              производим печатные платы и предоставляем мировые технологии с 1997 года.
-              Выполняем срочные заказы и пилотные образцы до 10 дней.
+            <p class="about__text">Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые технологии с 1997&nbsp;года. Выполняем срочные заказы и пилотные образцы до&nbsp;10&nbsp;дней.
             </p>
             <p class="about__text">Наши поставщики - мировые производители электронных компонентов:
               OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices
               применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ),
               МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
             </p>
-            <p class="about__text">
+            <p class="about__text about__text--hidden">
               Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов,
               70% из которых продолжают сотрудничество по сей день. На данный момент насчитывается более
               14 офисов по всей стране и 20 городов присутствия.
             </p>
-            <p class="about__text">
+            <p class="about__text about__text--hidden">
               Мы стремимся к постоянному развитию и повышению уровня качества продукции, производимой внутри компании.
               Использование инновационных технологий помогает экономить деньги и время наших клиентов
             </p>
+            <div class="about__button-wrapper">
+              <button class="about__button btn" type="button">Подробнее</button>
+            </div>
           </div>
         </section>
         <section class="catalog">
@@ -153,7 +146,7 @@
             </ul>
           </div>
         </section>
-        <section class="question-block">
+        <section class="question-block" id="question-block">
           <div class="question-block__wrapper container">
             <div class="question-block__container">
               <h2 class="question-block__title">Остались вопросы? Задайте их нам!</h2>
@@ -161,7 +154,7 @@
               <form class="question-block__form form" action="https://echo.htmlacademy.ru/" method="get">
                 <label class="visually-hidden" for="user-name">Ваше имя:</label>
                 <input name="name" type="text" id="user-name" placeholder="Имя" required>
-                <label class="visually-hidden" for="">Ваш телефон:</label>
+                <label class="visually-hidden" for="user-phone">Ваш телефон:</label>
                 <input name="phone" type="tel" id="user-phone" placeholder="Телефон" required>
                 <label class="visually-hidden" for="question">Ваш вопрос:</label>
                 <textarea name="question" id="question" placeholder="Ваш вопрос"></textarea>
@@ -181,11 +174,11 @@
         <h2 class="visually-hidden">Контакты и навигация.</h2>
         <div class="footer__wrapper container">
           <div class="footer__header-wrapper">
-            <header class="footer__header">
+            <div class="footer__header">
               <a class="footer__link-logo logo" href="index.html">
                 <img class="footer__logo logo__image" src="img/svg/logo.svg" width="215" height="55" alt="Логотип Smart Device умные технологии.">
               </a>
-            </header>
+            </div>
             <div class="footer__social-wrapper">
               <h3 class="visually-hidden">Мы с социальных сетях.</h3>
               <ul class="footer__socal-list social">
@@ -216,7 +209,7 @@
           <div class="footer__navigation-wrapper accordion" data-accordion="parent" data-single="data-single" data-close-inner="data-close-inner" data-destroy="(max-width: 767px)">
             <nav class="footer__navigation accordion__element" data-accordion="element">
               <h3 class="footer__navigation-title footer__title">Разделы сайта</h3>
-              <button class="footer__button accordion__button btn btn--aquamarine" type="button" data-accordion="button">Разделы сайта
+              <button class="footer__button accordion__button btn" type="button" data-accordion="button">Разделы сайта
                 <span class="visually-hidden">Открыть раздел.</span>
               </button>
               <div class="accordion__content" data-accordion="content">
@@ -251,7 +244,7 @@
             </nav>
             <div class="footer__contacts accordion__element" data-accordion="element">
               <h3 class="footer__contacts-title footer__title">Наш офис</h3>
-              <button class="footer__button accordion__button btn btn--aquamarine" type="button" data-accordion="button">Наш офис
+              <button class="footer__button accordion__button btn" type="button" data-accordion="button">Наш офис
                 <span class="visually-hidden">Открыть раздел</span></button>
               <div class="accordion__content" data-accordion="content">
                 <div class="accordion__wrapper">

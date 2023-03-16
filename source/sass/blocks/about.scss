@@ -1,0 +1,111 @@
+.about {
+  background-color: $color-alice-blue;
+
+}
+
+.about__wrapper {
+  padding-top: 58px;
+  padding-left: 250px;
+  padding-right: 0;
+  padding-bottom: 100px;
+  position: relative;
+
+  @media (max-width: 1023px) {
+    padding-top: 38px;
+    padding-bottom: 80px;
+    padding-left: 224px;
+  }
+
+  @media (max-width: 767px) {
+    padding: 25px 25px 80px;
+  }
+
+}
+
+.about__title {
+  font-family: $ff-roboto-condensed;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $color-black-pearl;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 12px;
+  padding: 0;
+
+  @media (max-width: 1023px) {
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 28px;
+    line-height: 39px;
+  }
+}
+
+.about__text {
+  font-family: $ff-pt-mono;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-black-pearl;
+  text-align: left;
+  margin: 0;
+  margin-bottom: 16px;
+
+  @media (max-width: 1023px) {
+    margin-bottom: 18px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 19px;
+  }
+}
+
+.about__button-wrapper {
+  padding: 24px 0;
+
+  @media (max-width: 1023px) {
+    padding: 0;
+  }
+
+}
+.about__button {
+  font-family: $ff-roboto-condensed;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-deep-sky-blue;
+  padding: 14px 42px;
+  border: 1px solid $color-deep-sky-blue;
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+.about__text--hidden {
+  display: none;
+}
+
+.about__wrapper::before {
+  content: "";
+  width: 150px;
+  height: 320px;
+  background-image: url(../../img/2022.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 58px;
+
+  @media (max-width: 1023px) {
+    left: 46px;
+    top: 40px;
+  }
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
