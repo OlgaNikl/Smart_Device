@@ -1,0 +1,115 @@
+.question-block {
+  background-color: $color-deep-sky-blue;
+  position: relative;
+}
+
+.question-block::before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 840px solid $color-black-pearl;
+  border-right: 968px solid transparent;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @media (max-width: 1023px) {
+    display: none;
+  }
+}
+
+.question-block::after {
+  content: "";
+  position: absolute;
+  top: 246px;
+  left: 350px;
+  background-image: url("../../img/paper_airplane.png");
+  background-repeat: no-repeat;
+  width: 510px;
+  height: 285px;
+
+  @media (max-width: 1023px) {
+    display: none;
+  }
+}
+
+.question-block__wrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 130px;
+  padding-bottom: 236px;
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 1240px;
+
+  @media (max-width: 1023px) {
+    padding: 46px 50px 110px;
+    justify-content: flex-start;
+  }
+
+  @media (max-width: 767px) {
+    padding: 48px 25px 80px;
+    justify-content: center;
+  }
+}
+
+.question-block__container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 30px;
+  padding-left: 18px;
+  width: 50%;
+
+  @media (max-width: 1023px) {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  @media (max-width: 767px) {
+    max-width: 270px;
+  }
+}
+
+.question-block__title {
+  font-family: $ff-roboto-condensed;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 51px;
+  color: $color-default-white;
+  padding: 0;
+  margin: 0;
+  padding: 8px 0;
+
+  @media (max-width: 1023px) {
+    margin-bottom: 6px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 30px;
+    line-height: 42px;
+  }
+
+}
+
+.question-block__description {
+  font-family: $ff-pt-mono;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: $color-default-white;
+  padding: 0;
+  margin-bottom: 35px;
+
+  @media (max-width: 1023px) {
+    margin-bottom: 22px;
+  }
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 34px;
+  }
+}
+

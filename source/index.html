@@ -6,6 +6,9 @@
     <meta name="description" content="Описание проекта">
     <title>SMART DEVICE умные технологии</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/ptmono-regular.woff2" as="font">
+    <link rel="preload" href="fonts/robotocondensed-bold.woff2" as="font">
+    <link rel="preload" href="fonts/robotocondensed-regular.woff2" as="font">
   </head>
   <body>
     <div class="wrapper">
@@ -97,9 +100,9 @@
             <p class="about__text">Мы&nbsp;поставляем электронные комплектующие, производим печатные платы и&nbsp;предоставляем мировые технологии с 1997&nbsp;года. Выполняем срочные заказы и пилотные образцы до&nbsp;10&nbsp;дней.
             </p>
             <p class="about__text">Наши поставщики - мировые производители электронных компонентов:
-              OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices
-              применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ),
-              МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.
+              OSRAM, CREE, HOLGLITRONIC, REFOND. <span class="about__text--hidden-mobile">Печатные платы и комплектующие Service Devices
+                применяются на предприятиях Российских Железных Дорог (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ),
+                МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России.</span>
             </p>
             <p class="about__text about__text--hidden">
               Smart Device - это команда профессионалов. Через нас прошло более 1 000 000 клиентов,
@@ -117,12 +120,15 @@
         </section>
         <section class="catalog">
           <div class="catalog__wrapper container">
-            <h2 class="catalog__title">Smart Device предлагает следующие товары и услуги</h2>
+            <h2 class="catalog__title">Smart Device предлагает следующие товары и&nbsp;услуги</h2>
+            <h2 class="catalog__title-mobile">Товары и&nbsp;услуги Smart&nbsp;Device</h2>
             <ul class="catalog__list">
               <li class="catalog__item card">
                 <a class="card__link card__link--production" href="#">
                   <picture>
-                    <img class="card__image" alt="">
+                    <source media="(max-width:767px)" srcset="img/production-mobile.jpg 1x, img/production-mobile@2x.jpg 2x">
+                    <source media="(max-width:1023px)" srcset="img/production-tablet.jpg 1x, img/production-tablet@2x.jpg 2x">
+                    <img class="card__image" src="img/production.jpg" width="350" height="650" srcset="img/production@2x.jpg 2x" alt="Реле в медном контуре на плате.">
                   </picture>
                   <h3 class="card__title">Производство печатных плат</h3>
                 </a>
@@ -130,17 +136,21 @@
               <li class="catalog__item card">
                 <a class="card__link card__link--installation" href="#">
                   <picture>
-                    <img class="card__image" alt="">
+                    <source media="(max-width:767px)" srcset="img/installation-mobile.jpg 1x, img/installation-mobile@2x.jpg 2x">
+                    <source media="(max-width:1023px)" srcset="img/installation-tablet.jpg 1x, img/installation-tablet@2x.jpg 2x">
+                    <img class="card__image" src="img/installation.jpg" width="350" height="650" alt="Транзисторы и крепление для процессора на плате.">
                   </picture>
-                  <h3 class="card__title">Монтаж печатных плат</h3>
+                  <h3 class="card__title">Монтаж&nbsp;печатных плат</h3>
                 </a>
               </li>
               <li class="catalog__item card">
                 <a class="card__link card__link--accessories" href="#">
                   <picture>
-                    <img class="card__image" alt="">
+                    <source media="(max-width:767px)" srcset="img/accessories-mobile.jpg 1x, img/accessories-mobile@2x.jpg 2x">
+                    <source media="(max-width:1023px)" srcset="img/accessories-tablet.jpg 1x, img/accessories-tablet@2x.jpg 2x">
+                    <img class="card__image" src="img/installation.jpg" width="350" height="650" alt="Реле в медном контуре и транзисторы на плате.">
                   </picture>
-                  <h3 class="card__title">Комплектующие для светотехники</h3>
+                  <h3 class="card__title">Комплектующие для&nbsp;светотехники</h3>
                 </a>
               </li>
             </ul>
@@ -148,20 +158,26 @@
         </section>
         <section class="question-block" id="question-block">
           <div class="question-block__wrapper container">
-            <div class="question-block__container">
+            <div class="question-block__container data-form-validate">
               <h2 class="question-block__title">Остались вопросы? Задайте их нам!</h2>
-              <span class="question-block__description"></span>
-              <form class="question-block__form form" action="https://echo.htmlacademy.ru/" method="get">
-                <label class="visually-hidden" for="user-name">Ваше имя:</label>
-                <input name="name" type="text" id="user-name" placeholder="Имя" required>
-                <label class="visually-hidden" for="user-phone">Ваш телефон:</label>
-                <input name="phone" type="tel" id="user-phone" placeholder="Телефон" required>
-                <label class="visually-hidden" for="question">Ваш вопрос:</label>
-                <textarea name="question" id="question" placeholder="Ваш вопрос"></textarea>
-                <div class="form__button-wrapper">
-                  <button class="form__button" type="submit">Задать вопрос</button>
-                  <label class="form__checkbox">Я согласен на обработку  персональных данных
-                    <input name="agreement" type="checkbox" value="agree" required>
+              <span class="question-block__description">Мы проконсультируем Вас бесплатно</span>
+              <form class="question-block__form form" action="https://echo.htmlacademy.ru/" method="post">
+                <div class="form__field" data-validate-type="text" data-on-input-validate data-required data-message-base="Заполните это поле">
+                  <label class="visually-hidden" for="user-name">Ваше имя:</label>
+                  <input name="name" type="text" id="user-name" placeholder="Имя" required>
+                </div>
+                <div class="form__field" data-validate-type="phone" data-on-input-validate data-required data-message-base="Заполните это поле" data-message-extra="Проверьте правильность заполнения">
+                  <label class="visually-hidden" for="user-phone">Ваш телефон:</label>
+                  <input name="phone" type="tel" id="user-phone" placeholder="Телефон" required>
+                </div>
+                <div class="form__field" data-validate-type="text" data-on-input-validate>
+                  <label class="visually-hidden" for="question">Ваш вопрос:</label>
+                  <textarea name="question" id="question" placeholder="Ваш вопрос"></textarea>
+                </div>
+                <button class="form__button" type="submit">Задать вопрос</button>
+                <div class="form__checkbox" data-validate-type="checkbox" data-required data-on-input-validate data-message-base="Заполните это поле">
+                  <label class="form__field" for="agreement">Я согласен на обработку  персональных данных
+                    <input name="agreement" id="agreement" type="checkbox" value="agree" checked required>
                     <span class="form__checkbox-mark"></span>
                   </label>
                 </div>
@@ -249,7 +265,7 @@
               <div class="accordion__content" data-accordion="content">
                 <div class="accordion__wrapper">
                   <address class="footer__contacts-content">
-                    <a class="footer__link" href="#">г. Мытищи, Олимпийский проспект, д.10</a>
+                    <a class="footer__link footer__link--address" href="#">г. Мытищи, Олимпийский проспект, д.10</a>
                     <a class="footer__link footer__link--phone" href="tel:+74955894050" aria-label="Наш телефон.">+7 (495) 589-40-50</a>
                     <a class="footer__link footer__link--phone" href="tel:+79253895829" aria-label="Наш телефон.">+7 (925) 389-58-29</a>
                     <a class="footer__link footer__link--phone" href="tel:+79253647813" aria-label="Наш телефон.">+7 (925) 364-78-13</a>

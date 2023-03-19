@@ -7,6 +7,8 @@
 .footer__wrapper {
   padding-top: 50px;
   padding-bottom: 55px;
+  padding-left: 0;
+  padding-right: 30px;
   display: flex;
 
   @media (max-width: 1023px) {
@@ -17,7 +19,7 @@
   }
 
   @media (max-width: 767px) {
-    // min-width: 320px;
+    // width: 320px;
     padding-top: 35px;
     padding-bottom: 35px;
     max-height: 100%;
@@ -34,7 +36,7 @@
   min-width: 215px;
 
   @media (max-width: 1023px) {
-    margin: 0;
+    margin-right: 0;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -55,11 +57,12 @@
   column-gap: 30px;
 
   @media (max-width: 1023px) {
-    column-gap: 130px;
+    column-gap: 126px;
   }
 
   @media (max-width: 767px) {
     flex-direction: column;
+    gap: 0;
   }
 }
 
@@ -85,6 +88,10 @@
     flex-direction: column;
     gap: 6px;
   }
+
+  @media (max-width: 767px) {
+    width: 90%;
+  }
 }
 
 .footer__title {
@@ -95,7 +102,7 @@
   line-height: 16px;
   color: $color-default-white;
   opacity: 0.7;
-  letter-spacing: -0.05em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
   text-align: left;
   margin-bottom: 16px;
@@ -131,12 +138,12 @@
 
 
   @media (max-width: 1023px) {
-    // min-width: 320px;
+    // max-width: 320px;
   }
 
   @media (max-width: 767px) {
     // min-width: 288px;
-    gap: 12px
+    gap: 6px
   }
 }
 
@@ -152,12 +159,12 @@
   // min-width: 345px;
 
   @media (max-width: 1023px) {
-    min-width: 320px;
+    // min-width: 320px;
   }
 
   @media (max-width: 767px) {
     font-size: 14px;
-    min-width: 288px;
+    // min-width: 288px;
   }
 
 }
@@ -166,44 +173,51 @@
   line-height: 25px;
 }
 
+.footer__link--address {
+  @media (max-width: 767px) {
+    margin-bottom: 12px;
+  }
+}
+
 @media (max-width: 767px) {
   .footer__navigation::before {
     content: "";
-    width: 345px;
+    width: 336px;
     height: 1px;
     background-color: $color-alice-blue;
     opacity: 0.7;
     position: absolute;
     top: 0;
-    left: -25px;
+    left: -16px;
   }
 
   .footer__navigation::after {
     content: "";
-    width: 345px;
+    width: 336px;
     height: 1px;
     background-color: $color-alice-blue;
     opacity: 0.7;
     position: absolute;
     bottom: 0;
-    left: -25px;
+    left: -16px;
   }
 }
 
 .footer__contacts {
   position: relative;
+  // max-width: 320;
 }
 
 @media (max-width: 767px) {
   .footer__contacts::after {
     content: "";
-    width: 345px;
+    width: 336px;
     height: 1px;
     background-color: $color-alice-blue;
     opacity: 0.7;
     position: absolute;
     bottom: 0;
-    left: -25px;
+    left: -16px;
   }
 }
 
@@ -235,7 +249,7 @@
   width: 15px;
   height: 15px;
   position: absolute;
-  right: -10px;
+  right: 10px;
 }
 
 .footer__button:hover,
