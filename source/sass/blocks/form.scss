@@ -53,6 +53,7 @@
   }
 
   textarea {
+    grid-column: 1 / 3;
     padding-top: 24px;
     min-height: 155px;
 
@@ -153,8 +154,6 @@
       left: 6px;
     }
   }
-
-  // .form__field {
-  //   width: 100%;
-  // }
 }
+
+
