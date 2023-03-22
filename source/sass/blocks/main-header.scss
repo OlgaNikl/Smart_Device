@@ -53,7 +53,7 @@
 
 .main-header__link {
   color:$color-alice-blue;
-  padding: 1px 16px 1px 40px;
+  padding: 4px 16px 4px 40px;
   display: block;
   box-sizing: border-box;
   position: relative;
@@ -113,5 +113,13 @@
 
   @media (max-width: 1023px) {
     display: none;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
+  &:active {
+    opacity: 0.3;
   }
 }
