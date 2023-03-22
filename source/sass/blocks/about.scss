@@ -103,9 +103,9 @@
   }
 }
 
-// .about__text-hidden {
-//   display: none;
-// }
+.about__text-hidden {
+  display: none;
+}
 
 .about__text--hidden-mobile {
   @media (max-width: 767px) {
@@ -134,15 +134,15 @@
 }
 
 .about__textblock {
-  max-height: 168px;
+  max-height: 170px;
   overflow: hidden;
   transition: max-height 0.255s ease-in;
 
   @media (max-width: 1023px) {
-    max-height: 255px;
+    max-height: 240px;
   }
 
   @media (max-width: 767px) {
-    max-height: 200px;
+    max-height: 220px;
   }
 }

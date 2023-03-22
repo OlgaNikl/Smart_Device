@@ -292,34 +292,32 @@
         <div class="modal__content" data-form-validate>
           <h3 class="modal__title">Закажите звонок</h3>
           <p class="modal__description">Оставьте контакты, мы&nbsp;проконсультируем <br>вас бесплатно в&nbsp;удобное время</p>
-          <div class="modal__form">
-            <form action="https://echo.htmlacademy.ru/" method="post">
-              <div class="modal__field" data-validate-type="text" data-focus data-on-input-validate data-required data-message-base="Заполните это поле">
-                <label class="visually-hidden" for="user-name">Ваше имя:</label>
-                <input name="name" type="text" id="user-name" placeholder="Имя" required>
-              </div>
-              <div class="modal__field" data-validate-type="phone" data-on-input-validate data-required data-message-base="Заполните это поле" data-message-extra="Проверьте правильность заполнения">
-                <label class="visually-hidden" for="user-phone">Ваш телефон:</label>
-                <input name="phone" type="tel" id="user-phone" placeholder="Телефон" required>
-              </div>
-              <div class="modal__field" data-validate-type="text" data-on-input-validate>
-                <label class="visually-hidden" for="question">Ваш вопрос:</label>
-                <textarea name="question" id="question" placeholder="Ваш вопрос"></textarea>
-              </div>
-              <button type="submit">Задать вопрос</button>
-              <div class="modal__checkbox" data-validate-type="checkbox" data-required data-on-input-validate data-message-base="Заполните это поле">
-                <label class="modal__agreement" for="agreement">Я&nbsp;согласен на&nbsp;обработку персональных данных
-                  <input name="agreement" id="agreement" type="checkbox" value="agree" checked required>
-                  <span class="modal__checkbox-mark"></span>
-                </label>
-              </div>
-            </form>
-          </div>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
             <svg width="20" height="20">
               <use xlink:href="img/sprite.svg#icon-close"></use>
             </svg>
           </button>
+          <form action="https://echo.htmlacademy.ru/" method="post">
+            <div class="modal__field" data-validate-type="text" data-on-input-validate data-required data-message-base="Заполните это поле">
+              <label class="visually-hidden" for="user-name">Ваше имя:</label>
+              <input name="name" type="text" id="user-name" placeholder="Имя" required>
+            </div>
+            <div class="modal__field" data-validate-type="phone" data-on-input-validate data-required data-message-base="Заполните это поле" data-message-extra="Проверьте правильность заполнения">
+              <label class="visually-hidden" for="user-phone">Ваш телефон:</label>
+              <input name="phone" type="tel" id="user-phone" placeholder="Телефон" required>
+            </div>
+            <div class="modal__field" data-validate-type="text" data-on-input-validate>
+              <label class="visually-hidden" for="question">Ваш вопрос:</label>
+              <textarea name="question" id="question" placeholder="Ваш вопрос"></textarea>
+            </div>
+            <button type="submit">Задать вопрос</button>
+            <div class="modal__checkbox" data-validate-type="checkbox" data-required data-on-input-validate data-message-base="Заполните это поле">
+              <label class="modal__agreement" for="agreement">Я&nbsp;согласен на&nbsp;обработку персональных данных
+                <input name="agreement" id="agreement" type="checkbox" value="agree" checked required>
+                <span class="modal__checkbox-mark"></span>
+              </label>
+            </div>
+          </form>
         </div>
       </div>
     </div>
