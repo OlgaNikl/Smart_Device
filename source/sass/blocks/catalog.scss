@@ -3,8 +3,8 @@
 }
 
 .catalog__wrapper {
-  padding-top: 64px;
-  padding-bottom: 140px;
+  padding-top: 62px;
+  padding-bottom: 146px;
   padding-left: 0;
   padding-right: 0;
 
@@ -42,7 +42,6 @@
 .catalog__title-mobile {
   @media (min-width: 768px) {
     display: none;
-
   }
 
   @media (max-width: 767px) {

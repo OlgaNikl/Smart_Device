@@ -7,7 +7,7 @@
   padding-top: 58px;
   padding-left: 250px;
   padding-right: 0;
-  padding-bottom: 94px;
+  padding-bottom: 92px;
   position: relative;
 
   @media (max-width: 1023px) {
@@ -72,6 +72,10 @@
     padding: 20px 0;
   }
 
+  @media (max-width: 767px) {
+    padding-top: 0;
+  }
+
 }
 
 .about__button {
@@ -134,12 +138,12 @@
 }
 
 .about__textblock {
-  max-height: 170px;
+  max-height: 167px;
   overflow: hidden;
   transition: max-height 0.255s ease-in;
 
   @media (max-width: 1023px) {
-    max-height: 240px;
+    max-height: 255px;
   }
 
   @media (max-width: 767px) {

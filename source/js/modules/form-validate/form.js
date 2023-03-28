@@ -59,24 +59,18 @@ export class Form {
   }
 
   _onFormSubmit(event, callback = null) {
-    // const result = this.validateForm(event.target);
-
-      if (this.validateForm(event.target) && callback) {
-        this._callbacks[callback].successCallback(event);
-        if (this._callbacks[callback].reset) {
-          setTimeout(() => {
-            this.reset(event.target);
-          }, this._callbacks[callback].resetTimeout ? this._callbacks[callback].resetTimeout : 500);
-        }
-        return;
+    if (this.validateForm(event.target) && callback) {
+      this._callbacks[callback].successCallback(event);
+      if (this._callbacks[callback].reset) {
+        setTimeout(() => {
+          this.reset(event.target);
+        }, this._callbacks[callback].resetTimeout ? this._callbacks[callback].resetTimeout : 500);
       }
-      if (!this.validateForm(event.target) && callback) {
-        this._callbacks[callback].errorCallback(event);
-        return;
-      }
-      // if (result === true) {
-      //   event.target.submit();
-      // }
+      return;
+    }
+    if (!this.validateForm(event.target) && callback) {
+      this._callbacks[callback].errorCallback(event);
+      return;
     }
   }
 

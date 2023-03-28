@@ -145,7 +145,7 @@
                     <source media="(max-width:1023px)" srcset="img/installation-tablet.jpg 1x, img/installation-tablet@2x.jpg 2x">
                     <img class="card__image" src="img/installation.jpg" width="350" height="650" alt="Транзисторы и крепление для процессора на плате.">
                   </picture>
-                  <h3 class="card__title">Монтаж&nbsp;печатных плат</h3>
+                  <h3 class="card__title">Монтаж печатных плат</h3>
                 </a>
               </li>
               <li class="catalog__item card">
@@ -163,26 +163,26 @@
         </section>
         <section class="question-block" id="question-block">
           <div class="question-block__wrapper container">
-            <div class="question-block__container" data-form-validate>
+            <div class="question-block__container" data-form-validate data-callback="base">
               <h2 class="question-block__title">Остались вопросы? Задайте их нам!</h2>
               <span class="question-block__description">Мы проконсультируем Вас бесплатно</span>
               <form class="question-block__form form" action="https://echo.htmlacademy.ru/" method="post">
-                <label  for="user-name" data-validate-type="text" data-focus data-required data-message-base="Заполните это поле">
+                <label  for="user-name" data-validate-type="text" data-on-input-validate data-limitation="letters" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-focus data-required>
                   <input name="name" type="text" id="user-name" placeholder="Имя" required>
                   <span class="visually-hidden">Ваше имя:</span>
                 </label>
-                <label for="user-phone" data-validate-type="phone" data-required data-message-base="Заполните это поле" data-message-extra="Проверьте правильность заполнения">
+                <label for="user-phone" data-validate-type="phone" data-on-input-validate data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required>
                   <input name="phone" type="tel" id="user-phone" placeholder="Телефон" required>
                   <span class="visually-hidden">Ваш телефон:</span>
                 </label>
                 <div class="form__textarea">
-                  <label for="question" data-validate-type="text">
+                  <label for="question" data-validate-type="text" data-on-input-validate>
                     <textarea name="question" id="question" placeholder="Ваш вопрос" cols="30" rows="10"></textarea>
                   </label>
                 </div>
                 <div class="form__button-wrapper">
                   <button class="form__button btn" type="submit">Задать вопрос</button>
-                  <label class="form__agreement" for="agreement" data-validate-type="checkbox" data-required data-message-base="Заполните это поле">
+                  <label class="form__agreement" for="agreement" data-validate-type="checkbox" data-message-base="Поле обязательно к заполнению" data-required>
                     Я&nbsp;согласен на&nbsp;обработку  персональных данных
                     <input name="agreement" id="agreement" type="checkbox" value="agree" checked required>
                     <span class="form__checkbox-mark"></span>
@@ -289,7 +289,7 @@
     <div class="modal modal--preload" data-modal="modal">
       <div class="modal__wrapper">
         <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content " data-form-validate>
+        <div class="modal__content " data-form-validate data-callback="base">
           <h3 class="modal__title">Закажите звонок</h3>
           <p class="modal__description">Оставьте контакты, мы&nbsp;проконсультируем <br>вас бесплатно в&nbsp;удобное время</p>
           <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
@@ -299,7 +299,7 @@
           </button>
           <div class="modal__form">
             <form action="https://echo.htmlacademy.ru/" method="post">
-              <div class="modal__name" data-validate-type="text" data-on-input-validate data-limitation="letters" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
+              <div class="modal__name" data-validate-type="text" data-on-input-validate data-limitation="letters" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-focus data-required>
                 <label class="visually-hidden" for="modal-name">Ваше имя:</label>
                 <input name="name" type="text" id="modal-name" placeholder="Имя" required>
               </div>
@@ -308,8 +308,8 @@
                 <input name="phone" type="tel" id="modal-phone" placeholder="Телефон" required>
               </div>
               <div class="modal__textarea" data-validate-type="text" data-on-input-validate>
-                <label class="visually-hidden" for="question">Ваш вопрос:</label>
-                <textarea name="question" id="question" placeholder="Ваш вопрос"></textarea>
+                <label class="visually-hidden" for="ask">Ваш вопрос:</label>
+                <textarea name="ask" id="ask" placeholder="Ваш вопрос"></textarea>
               </div>
               <button type="submit">Отправить</button>
               <div class="modal__checkbox">
@@ -323,20 +323,6 @@
         </div>
       </div>
     </div>
-
-    <!-- <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div> -->
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
