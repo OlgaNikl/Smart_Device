@@ -1,13 +1,4 @@
-// export function smoothScroll(event) {
-//   event.preventDefault();
-//   const questionBlock = document.querySelector('.question-block');
-
-//   document.querySelector('.main__link').addEventListener('click', () => {
-//   questionBlock.scrollIntoView({behavior: 'smooth'}),
-//   });
-// };
-
-export function smoothScroll() {
+export function initSmoothScroll() {
   let anchors = document.querySelectorAll('a[href*="#"]');
   if (!anchors.length) {
     return;
@@ -22,4 +13,3 @@ export function smoothScroll() {
     });
   });
 }
-

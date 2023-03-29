@@ -105,7 +105,7 @@
   }
 }
 
-.advantages__title {
+.advantages__item h3 {
   margin: 0;
   margin-bottom: 14px;
   font-family: $ff-roboto-condensed;
@@ -127,7 +127,7 @@
   }
 }
 
-.advantages__description {
+.advantages__item p {
   margin: 0;
   margin-bottom: 32px;
   font-family: $ff-pt-mono;
@@ -147,7 +147,7 @@
   }
 }
 
-.advantages__description--detective {
+.advantages__item--detective p {
   margin-bottom: 60px;
 
   @media (max-width: 1023px) {
@@ -159,7 +159,7 @@
   }
 }
 
-.advantages__description--tag {
+.advantages__item--tag p {
   margin-bottom: 60px;
 
   @media (max-width: 1023px) {
@@ -172,7 +172,7 @@
   }
 }
 
-.advantages__title--tag {
+.advantages__item--tag h3 {
   @media (max-width: 1023px) {
     margin-bottom: 6px;
   }
@@ -182,7 +182,7 @@
   }
 }
 
-.advantages__title--detective {
+.advantages__item--detective h3 {
   @media (max-width: 767px) {
     margin-bottom: 15px;
   }
