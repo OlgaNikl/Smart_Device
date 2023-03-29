@@ -13,7 +13,6 @@
     width: 320px;
     padding: 50px 25px 25px;
   }
-
 }
 
 .advantages__list {
@@ -50,7 +49,7 @@
     color: $color-whisper;
   }
 
-  &:hover svg  {
+  &:hover svg {
     fill: $color-whisper;
   }
 
@@ -168,7 +167,6 @@
 
   @media (max-width: 767px) {
     min-height: 146px;
-
   }
 }
 

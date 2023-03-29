@@ -1,7 +1,6 @@
 .footer {
   width: 100%;
   background-color: $color-black-pearl;
-
 }
 
 .footer__wrapper {
@@ -50,7 +49,6 @@
     margin: 0 auto;
     padding-top: 0;
   }
-
 }
 
 .footer__link-logo {
@@ -241,9 +239,7 @@
   @media (min-width: 768px) {
     display: none;
   }
-}
 
-.footer__button {
   @media (max-width: 767px) {
     font-family: $ff-roboto-condensed;
     font-weight: 400;
@@ -260,7 +256,7 @@
 
 .footer__button::after {
   content: "";
-  background-image: url(../../img/svg/union.svg);
+  background-image: url("../../img/svg/union.svg");
   background-repeat: no-repeat;
   width: 15px;
   height: 15px;

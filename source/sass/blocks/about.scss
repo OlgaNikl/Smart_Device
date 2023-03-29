@@ -19,7 +19,6 @@
     width: 320px;
     padding: 25px 25px 62px;
   }
-
 }
 
 .about__wrapper h2 {
@@ -115,7 +114,7 @@
   content: "";
   width: 150px;
   height: 320px;
-  background-image: url(../../img/2022.png);
+  background-image: url("../../img/2022.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
@@ -134,7 +133,7 @@
 .about__textblock {
   max-height: 167px;
   overflow: hidden;
-  transition: max-height 0.255s ease-in;
+  transition: max-height 0.26s ease-in;
 
   @media (max-width: 1023px) {
     max-height: 255px;

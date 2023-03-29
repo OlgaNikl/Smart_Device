@@ -996,9 +996,9 @@ button,
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
-  margin-left: auto;
   padding: 10px;
   margin: 0;
+  margin-left: auto;
   width: 100%;
   max-width: 300px;
   min-height: 48px;
@@ -1761,7 +1761,7 @@ button,
 
 .footer__button::after {
   content: "";
-  background-image: url(../../img/svg/union.svg);
+  background-image: url("../../img/svg/union.svg");
   background-repeat: no-repeat;
   width: 15px;
   height: 15px;
@@ -2064,7 +2064,7 @@ button,
   content: "";
   width: 150px;
   height: 320px;
-  background-image: url(../../img/2022.png);
+  background-image: url("../../img/2022.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
@@ -2074,9 +2074,9 @@ button,
 .about__textblock {
   max-height: 167px;
   overflow: hidden;
-  -webkit-transition: max-height 0.255s ease-in;
-  -o-transition: max-height 0.255s ease-in;
-  transition: max-height 0.255s ease-in;
+  -webkit-transition: max-height 0.26s ease-in;
+  -o-transition: max-height 0.26s ease-in;
+  transition: max-height 0.26s ease-in;
 }
 
 [data-accordion=element].is-active > [data-accordion=content] {
@@ -2145,7 +2145,7 @@ button,
   background-image: url("../../img/svg/arrow-right.svg");
   background-repeat: no-repeat;
   background-position: center;
-  border-radius: 3px 0px 0px 0px;
+  border-radius: 3px 0 0 0;
 }
 
 .card__title {
@@ -2160,6 +2160,10 @@ button,
   left: 40px;
   z-index: 1;
   max-width: 50%;
+}
+
+.card__image {
+  overflow: hidden;
 }
 
 .card__link:hover,
@@ -2398,7 +2402,7 @@ button,
 }
 
 .form input[type=checkbox]:checked + .form__checkbox-mark::before {
-  background-image: url(../../img/svg/checkbox-mark.svg);
+  background-image: url("../../img/svg/checkbox-mark.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -3015,7 +3019,6 @@ button,
   }
 
   .accordion {
-    margin: 0;
     margin: 0 auto;
   }
 

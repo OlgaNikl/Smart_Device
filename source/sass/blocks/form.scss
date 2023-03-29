@@ -39,10 +39,9 @@
       padding-bottom: 12px;
     }
 
-    @media (max-width: 767px)  {
+    @media (max-width: 767px) {
       padding-bottom: 14px;
     }
-
   }
 
   input[type="text"] {
@@ -57,7 +56,6 @@
 
   .form__textarea {
     grid-column: 1 / -1;
-
   }
 
   label {
@@ -111,7 +109,6 @@
     @media (max-width: 767px) {
       max-width: 100%;
     }
-
   }
 
   .form__button-wrapper {
@@ -157,7 +154,7 @@
     grid-area: checkbox;
 
     &:checked + .form__checkbox-mark::before {
-      background-image: url(../../img/svg/checkbox-mark.svg);
+      background-image: url("../../img/svg/checkbox-mark.svg");
       background-repeat: no-repeat;
       background-position: center;
     }

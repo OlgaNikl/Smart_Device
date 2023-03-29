@@ -1,5 +1,6 @@
 .card {
   position: relative;
+
   &::after {
     content: "";
     position: absolute;
@@ -11,7 +12,7 @@
     background-image: url("../../img/svg/arrow-right.svg");
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 3px 0px 0px 0px;
+    border-radius: 3px 0 0 0;
 
     @media (max-width: 767px) {
       width: 40px;
@@ -49,6 +50,8 @@
 }
 
 .card__image {
+  overflow: hidden;
+
   @media (max-width: 1023px) {
     width: 100%;
     margin: 0;

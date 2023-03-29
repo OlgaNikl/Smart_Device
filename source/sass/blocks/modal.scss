@@ -164,7 +164,7 @@
       appearance: none;
 
       &:checked + .modal__checkbox-mark::before {
-        background-image: url(../../img/svg/checkbox-mark.svg);
+        background-image: url("../../img/svg/checkbox-mark.svg");
         background-repeat: no-repeat;
         background-position: center;
       }
@@ -205,7 +205,7 @@
   }
 
   &__description {
-    font-family:$ff-pt-mono;
+    font-family: $ff-pt-mono;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
