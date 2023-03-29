@@ -4,6 +4,7 @@ import {Form} from './modules/form-validate/form';
 import {initAccordions} from './modules/accordions/init-accordion';
 import {initPhoneMask} from './modules/phone-mask';
 import {initSmoothScroll} from './modules/smooth-scroll/init-smooth-scroll';
+import './modules/show-more/init-show-more';
 
 
 // ---------------------------------

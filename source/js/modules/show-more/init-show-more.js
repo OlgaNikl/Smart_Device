@@ -1,7 +1,9 @@
 (() => {
   const showMoreBlocks = document.querySelectorAll('.about__show-more');
 
-  if (!showMoreBlocks.length) return;
+  if (!showMoreBlocks.length) {
+    return;
+  }
 
   const toggleText = (button, textBlock, initialHeight, maxHeight) => {
     const isOpened = textBlock.classList.contains('active');
@@ -23,7 +25,7 @@
 
     let initialHeight = textBlock.getBoundingClientRect().height;
     let maxHeight = textBlock.scrollHeight;
-    let isOpened = textBlock.classList.contains('active');
+    // let isOpened = textBlock.classList.contains('active');
 
     button.addEventListener('click', () => {
       toggleText(button, textBlock, initialHeight, maxHeight);
