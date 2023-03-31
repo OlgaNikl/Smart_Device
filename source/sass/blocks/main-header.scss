@@ -20,7 +20,7 @@
 
   @media (max-width: 1023px) {
     align-items: start;
-    padding: 20px 70px 25px 50px;
+    padding: 15px 70px 25px 48px;
   }
 
   @media (max-width: 767px) {
@@ -40,6 +40,11 @@
 
   @media (max-width: 1023px) {
     gap: 20px;
+    padding-top: 5px;
+  }
+
+  @media (max-width: 767px) {
+    padding-top: 0;
   }
 }
 
@@ -59,21 +64,26 @@
 
 .main-header__link {
   color: $color-alice-blue;
-  padding: 4px 16px 4px 40px;
+  padding: 4px 16px 4px 42px;
   display: block;
   box-sizing: border-box;
   position: relative;
 
 
   @media (max-width: 1023px) {
-    padding: 10px;
+    padding: 8px 12px 8px 12px;
     width: 40px;
     height: 40px;
   }
 
   &:hover,
-  &:focus-visible {
+  &:focus {
     opacity: 0.7;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $color-alice-blue;
+    border-radius: 3px;
   }
 
   &:active {
@@ -85,7 +95,7 @@
 
 .main-header__icon {
   position: absolute;
-  left: 5px;
+  left: 7px;
   display: block;
   width: 21px;
   height: 20px;
@@ -123,6 +133,11 @@
   &:hover,
   &:focus {
     opacity: 0.7;
+  }
+
+  &:focus-visible {
+    outline: 1px solid $color-alice-blue;
+    border-radius: 3px;
   }
 
   &:active {
