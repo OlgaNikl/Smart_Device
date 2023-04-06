@@ -1,5 +1,5 @@
 .about {
-  background-color: $color-alice-blue;
+  background-color: $color-alice-blue-secodary;
 }
 
 .about__wrapper {
@@ -119,14 +119,14 @@
   content: "";
   width: 150px;
   height: 320px;
-  background-image: url("../../img/2022.png");
+  background-image: url("../img/2022.png");
   background-repeat: no-repeat;
   position: absolute;
   left: 0;
   top: 58px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/2022@2x.png");
+    background-image: url("../img/2022@2x.png");
     background-size: cover;
   }
 

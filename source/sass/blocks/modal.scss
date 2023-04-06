@@ -11,7 +11,7 @@
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
 
-  background-color: rgba($color-default-black, 0.8);
+  background-color: $color-black-pearl-overlay;
   transform: scale(1.2);
   visibility: hidden;
   opacity: 0;
@@ -164,7 +164,7 @@
       appearance: none;
 
       &:checked + .modal__checkbox-mark::before {
-        background-image: url("../../img/svg/checkbox-mark.svg");
+        background-image: url("../img/svg/checkbox-mark.svg");
         background-repeat: no-repeat;
         background-position: center;
       }

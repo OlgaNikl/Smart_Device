@@ -24,13 +24,13 @@
   position: absolute;
   top: 246px;
   right: 1058px;
-  background-image: url("../../img/paper_airplane.png");
+  background-image: url("../img/paper_airplane.png");
   background-repeat: no-repeat;
   width: 510px;
   height: 285px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../../img/paper_airplane@2x.png");
+    background-image: url("../img/paper_airplane@2x.png");
     background-size: cover;
   }
 

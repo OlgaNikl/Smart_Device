@@ -1,28 +1,28 @@
 .main-section {
   background-color: $color-black-pearl;
-  background-image: url("/img/main-background.jpg");
+  background-image: url("../img/main-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("/img/main-background@2x.jpg");
+    background-image: url("../img/main-background@2x.jpg");
   }
 
   @media (max-width: 1023px) {
-    background-image: url("/img/main-background-tablet.jpg");
+    background-image: url("../img/main-background-tablet.jpg");
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/img/main-background-tablet@2x.jpg");
+      background-image: url("../img/main-background-tablet@2x.jpg");
     }
   }
 
   @media (max-width: 767px) {
-    background-image: url("/img/main-background-mobile.jpg");
+    background-image: url("../img/main-background-mobile.jpg");
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("/img/main-background-mobile@2x.jpg");
+      background-image: url("../img/main-background-mobile@2x.jpg");
     }
   }
 }

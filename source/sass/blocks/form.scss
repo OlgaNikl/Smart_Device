@@ -165,7 +165,7 @@
     grid-area: checkbox;
 
     &:checked + .form__checkbox-mark::before {
-      background-image: url("../../img/svg/checkbox-mark.svg");
+      background-image: url("../img/svg/checkbox-mark.svg");
       background-repeat: no-repeat;
       background-position: center;
     }
