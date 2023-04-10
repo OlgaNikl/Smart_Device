@@ -3,14 +3,13 @@
 }
 
 .advantages__wrapper {
-  padding: 120px 0 60px;
+  padding: 120px 30px 60px 30px;
 
   @media (max-width: 1023px) {
     padding: 80px 50px 40px;
   }
 
   @media (max-width: 767px) {
-    width: 320px;
     padding: 50px 25px 25px;
   }
 }

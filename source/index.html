@@ -177,26 +177,26 @@
               <h2 class="question-block__title">Остались вопросы? Задайте их нам!</h2>
               <span class="question-block__description">Мы проконсультируем Вас бесплатно</span>
               <form class="question-block__form form" action="https://echo.htmlacademy.ru/" method="post">
-                <label  for="user-name" data-validate-type="text" data-on-input-validate data-limitation="letters" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-focus data-required>
-                  <input name="name" type="text" id="user-name" placeholder="Имя" required>
+                <label  for="user-name" data-validate-type="text" data-on-input-validate data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
+                  <input name="name" type="text" id="user-name" placeholder="Имя" autocomplete="off" data-focus required>
                   <span class="visually-hidden">Ваше имя:</span>
                 </label>
                 <label for="user-phone" data-validate-type="phone" data-on-input-validate data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required>
-                  <input name="phone" type="tel" id="user-phone" placeholder="Телефон" required>
+                  <input name="phone" type="tel" id="user-phone" placeholder="Телефон" autocomplete="off" required>
                   <span class="visually-hidden">Ваш телефон:</span>
                 </label>
                 <div class="form__textarea">
                   <label for="question" data-validate-type="text" data-on-input-validate>
-                    <textarea name="question" id="question" placeholder="Ваш вопрос" cols="30" rows="10"></textarea>
+                    <textarea name="question" id="question" placeholder="Ваш вопрос" autocomplete="off" cols="30" rows="10"></textarea>
                   </label>
                 </div>
                 <div class="form__button-wrapper">
-                  <button class="form__button btn" type="submit">Задать вопрос</button>
                   <label class="form__agreement" for="agreement" data-validate-type="checkbox" data-message-base="Поле обязательно к заполнению" data-required>
                     Я&nbsp;согласен на&nbsp;обработку  персональных данных
                     <input name="agreement" id="agreement" type="checkbox" value="agree" checked required>
                     <span class="form__checkbox-mark"></span>
                   </label>
+                  <button class="form__button btn" type="submit">Задать вопрос</button>
                 </div>
               </form>
             </div>
@@ -309,24 +309,26 @@
           </button>
           <div class="modal__form">
             <form action="https://echo.htmlacademy.ru/" method="post">
-              <div class="modal__name" data-validate-type="text" data-on-input-validate data-limitation="letters" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-focus data-required>
+              <div class="modal__name" data-validate-type="text" data-on-input-validate data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required>
                 <label class="visually-hidden" for="modal-name">Ваше имя:</label>
-                <input name="name" type="text" id="modal-name" placeholder="Имя" required>
+                <input name="name" type="text" id="modal-name" placeholder="Имя" autocomplete="off" data-focus required>
               </div>
               <div class="modal__tel" data-validate-type="phone" data-on-input-validate data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required>
                 <label class="visually-hidden" for="modal-phone">Ваш телефон:</label>
-                <input name="phone" type="tel" id="modal-phone" placeholder="Телефон" required>
+                <input name="phone" type="tel" id="modal-phone" placeholder="Телефон" autocomplete="off" required>
               </div>
               <div class="modal__textarea" data-validate-type="text" data-on-input-validate>
                 <label class="visually-hidden" for="ask">Ваш вопрос:</label>
-                <textarea name="ask" id="ask" placeholder="Ваш вопрос"></textarea>
+                <textarea name="ask" id="ask" placeholder="Ваш вопрос" autocomplete="off"></textarea>
               </div>
-              <button type="submit">Отправить</button>
-              <div class="modal__checkbox">
-                <label for="modal-agreement" data-validate-type="checkbox" data-message-base="Поле обязательно к заполнению" data-required>Я&nbsp;согласен на&nbsp;обработку &emsp;персональных данных
-                  <input name="agreement" id="modal-agreement" type="checkbox" value="agree" checked required>
-                  <span class="modal__checkbox-mark"></span>
-                </label>
+              <div class="modal__button-wrapper">
+                <div class="modal__checkbox">
+                  <label for="modal-agreement" data-validate-type="checkbox" data-message-base="Поле обязательно к заполнению" data-required>Я&nbsp;согласен на&nbsp;обработку &emsp;персональных данных
+                    <input name="agreement" id="modal-agreement" type="checkbox" value="agree" checked required>
+                    <span class="modal__checkbox-mark"></span>
+                  </label>
+                </div>
+                <button type="submit">Отправить</button>
               </div>
             </form>
           </div>

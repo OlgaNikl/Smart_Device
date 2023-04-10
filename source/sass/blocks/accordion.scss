@@ -12,7 +12,6 @@
     }
 
     &__element {
-      max-width: 320px;
       padding: 10px 0;
     }
 
@@ -26,18 +25,18 @@
       height: 1px;
       position: absolute;
       background-color: $color-alice-blue;
-      right: 10px;
-      top: 50%;
+      right: 26px;
+      top: 15px;
     }
 
     &__button {
       width: 100%;
-      padding: 12px 10px;
+      padding: 12px 26px;
       cursor: pointer;
     }
 
     &__wrapper {
-      padding: 6px;
+      padding: 6px 8px 0 24px;
     }
   }
 }

@@ -13,6 +13,7 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: 2;
 
   @media (max-width: 1023px) {
     display: none;
@@ -23,11 +24,12 @@
   content: "";
   position: absolute;
   top: 246px;
-  right: 1058px;
+  left: 350px;
   background-image: url("../img/paper_airplane.png");
   background-repeat: no-repeat;
   width: 510px;
   height: 285px;
+  z-index: 3;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/paper_airplane@2x.png");
@@ -56,6 +58,7 @@
   @media (max-width: 767px) {
     padding: 38px 25px 90px;
     justify-content: center;
+    width: 100%;
   }
 }
 
@@ -73,7 +76,7 @@
   }
 
   @media (max-width: 767px) {
-    max-width: 270px;
+    width: 100%;
     padding: 0;
   }
 }
@@ -85,11 +88,13 @@
   line-height: 51px;
   color: $color-default-white;
   margin: 0;
-  padding: 6px 0 8px;
+  padding: 8px 0 8px;
+  z-index: 11;
 
   @media (max-width: 767px) {
     font-size: 30px;
     line-height: 42px;
+    width: 270px;
   }
 }
 
@@ -101,6 +106,7 @@
   color: $color-default-white;
   padding: 0;
   margin-bottom: 35px;
+  z-index: 11;
 
   @media (max-width: 1023px) {
     margin-bottom: 24px;
@@ -110,5 +116,6 @@
     font-size: 14px;
     line-height: 19px;
     margin-bottom: 34px;
+    width: 270px;
   }
 }

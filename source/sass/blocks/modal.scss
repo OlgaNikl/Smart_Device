@@ -114,8 +114,15 @@
       padding-top: 25px;
     }
 
+    .modal__button-wrapper {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+    }
+
     button {
       margin-top: 5px;
+      margin-bottom: 20px;
       padding: 13px 25px;
       background-color: $color-black-pearl;
       color: $color-default-white;
@@ -128,6 +135,7 @@
       border-radius: 3px;
       border: none;
       cursor: pointer;
+      user-select: none;
 
       &:hover,
       &:focus {
@@ -157,6 +165,11 @@
         top: 6px;
         left: 6px;
       }
+    }
+
+    .input-message {
+      font-family: inherit;
+      color: $color-black-pearl;
     }
 
     input[type="checkbox"] {
@@ -265,7 +278,6 @@
     transform: scale(1);
     visibility: visible;
     opacity: 1;
-
     pointer-events: auto;
   }
 }

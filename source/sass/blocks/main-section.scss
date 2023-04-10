@@ -31,20 +31,19 @@
   margin: 0 auto;
   padding-top: 305px;
   padding-bottom: 280px;
-  padding-left: 125px;
+  padding-left: 156px;
   display: flex;
   flex-direction: column;
 
   @media (max-width: 1023px) {
     padding-top: 180px;
     padding-bottom: 205px;
-    padding-left: 52px;
+    padding-left: 50px;
     position: relative;
   }
 
   @media (max-width: 767px) {
     padding: 150px 25px 190px;
-    width: 320px;
   }
 }
 
@@ -104,6 +103,7 @@
   border-radius: 3px;
   text-align: center;
   color: $color-alice-blue;
+  user-select: none;
 
   @media (max-width: 1023px) {
     margin-left: 44px;

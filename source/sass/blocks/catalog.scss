@@ -5,8 +5,8 @@
 .catalog__wrapper {
   padding-top: 66px;
   padding-bottom: 142px;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 30px;
+  padding-right: 30px;
 
   @media (max-width: 1023px) {
     padding-top: 56px;
@@ -14,7 +14,7 @@
   }
 
   @media (max-width: 767px) {
-    width: 320px;
+    width: 100%;
     padding: 48px 25px 86px;
   }
 }
@@ -50,7 +50,7 @@
     font-family: $ff-roboto-condensed;
     font-weight: 400;
     font-size: 28px;
-    line-height: 140.62%;
+    line-height: 140%;
     color: $color-default-white;
   }
 }

@@ -2,6 +2,7 @@
   display: inline-flex;
   box-sizing: border-box;
   border: none;
+  user-select: none;
   cursor: pointer;
 
   transition: opacity $trans-default;

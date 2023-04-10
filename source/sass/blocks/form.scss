@@ -1,10 +1,11 @@
 .form {
-  z-index: 5;
+  z-index: 11;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px 30px;
 
   @media (max-width: 767px) {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -41,10 +42,6 @@
     }
 
     @media (max-width: 767px) {
-      padding-bottom: 12px;
-    }
-
-    @media (max-width: 767px) {
       padding-bottom: 14px;
     }
   }
@@ -77,13 +74,34 @@
     }
 
     @media (max-width: 767px) {
-      padding-top: 20px;
+      padding-top: 22px;
       min-height: 180px;
+    }
+  }
+
+
+  .form__button-wrapper {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 8px;
+    gap: 50px;
+
+    @media (max-width: 1023px) {
+      gap: 30px;
+    }
+
+    @media (max-width: 767px) {
+      grid-column: 1 / -1;
+      grid-template-columns: 1fr;
+      padding-top: 3px;
+      gap: 24px;
     }
   }
 
   button {
     grid-column: 1 / 2;
+    grid-row: 1;
     padding: 14px 6px;
     background-color: $color-black-pearl;
     color: $color-default-white;
@@ -121,25 +139,9 @@
     }
   }
 
-  .form__button-wrapper {
-    grid-column: 1 / -1;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 10px;
-    gap: 50px;
-
-    @media (max-width: 1023px) {
-      gap: 30px;
-    }
-
-    @media (max-width: 767px) {
-      grid-template-columns: 1fr;
-      padding-top: 3px;
-      gap: 24px;
-    }
-  }
-
   .form__agreement {
+    grid-column: 2 / 3;
+    grid-row: 2;
     align-self: self-end;
     font-family: $ff-pt-mono;
     font-weight: 400;
@@ -153,10 +155,12 @@
 
     @media (max-width: 1023px) {
       align-self: center;
+      width: 260px;
     }
 
     @media (max-width: 767px) {
-      padding-left: 28px;
+      padding-left: 30px;
+      grid-column: 1 / -1;
     }
   }
 
@@ -188,7 +192,7 @@
     border-radius: 2px;
 
     @media (max-width: 767px) {
-      top: 6px;
+      top: 8px;
       left: 6px;
     }
   }
