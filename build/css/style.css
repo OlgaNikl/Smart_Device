@@ -2239,6 +2239,19 @@ button,
   height: 100%;
 }
 
+.card__link:hover,
+.card__link:focus {
+  opacity: 0.7;
+}
+
+.card__link:focus-visible + .card__image {
+  outline: 1px solid #f2f5f7;
+}
+
+.card__link:active {
+  opacity: 0.3;
+}
+
 .card__title {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-weight: 400;
@@ -2260,19 +2273,6 @@ button,
   -o-object-fit: cover;
   object-fit: cover;
   overflow: hidden;
-}
-
-.card__link:hover,
-.card__link:focus {
-  opacity: 0.7;
-}
-
-.card__link:focus-visible + card__image {
-  outline: 1px solid #f2f5f7;
-}
-
-.card__link:active {
-  opacity: 0.3;
 }
 
 .question-block {
@@ -2501,8 +2501,8 @@ button,
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  -ms-grid-row: 2;
-  grid-row: 2;
+  -ms-grid-row: 1;
+  grid-row: 1;
   -ms-grid-row-align: self-end;
   align-self: self-end;
   font-family: "PT Mono", "Courier New", monospace;
@@ -2904,7 +2904,7 @@ button,
 
 @media (max-width: 1023px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 1023px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 1023px) and (min-resolution: 2dppx) {
   .main-section {
-    background-image: url("../img/main-background-tablet@2x.jpg");
+    background-image: url("../img/main-background-tablet@2x.webp");
   }
 }
 
@@ -3328,6 +3328,8 @@ button,
   .form .form__agreement {
     padding-left: 30px;
     grid-column: 1/-1;
+    -ms-grid-row: 2;
+    grid-row: 2;
   }
 
   .form .form__checkbox-mark::before {
@@ -3401,7 +3403,7 @@ button,
 
 @media (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (-o-min-device-pixel-ratio: 2/1), (max-width: 767px) and (min-resolution: 2dppx) {
   .main-section {
-    background-image: url("../img/main-background-mobile@2x.jpg");
+    background-image: url("../img/main-background-mobile@2x.webp");
   }
 }
 
@@ -3421,7 +3423,7 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-resolution: 2dppx) {
   .main-section {
-    background-image: url("../img/main-background@2x.jpg");
+    background-image: url("../img/main-background@2x.webp");
   }
 
   .about__wrapper::before {
