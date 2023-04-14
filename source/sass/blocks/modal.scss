@@ -96,8 +96,10 @@
       font-weight: 400;
       font-size: 16px;
       line-height: 22px;
-      color: $color-alice-blue;
-      cursor: pointer;
+      // color: $color-alice-blue;
+      color: transparent;
+      text-shadow: 0 0 0 $color-alice-blue;
+
 
       &:hover,
       &:focus {

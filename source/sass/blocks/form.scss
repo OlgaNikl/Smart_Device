@@ -25,7 +25,10 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    color: $color-alice-blue;
+    // color: $color-alice-blue;
+    // pointer-events: none;
+    color: transparent;
+    text-shadow: 0 0 0 $color-alice-blue;
 
     &:hover,
     &:focus {
@@ -155,7 +158,7 @@
 
     @media (max-width: 1023px) {
       align-self: center;
-      width: 260px;
+      width: 100%;
     }
 
     @media (max-width: 767px) {
@@ -196,5 +199,10 @@
       top: 8px;
       left: 6px;
     }
+  }
+
+  .input-message {
+    font-family: inherit;
+    color: $color-black-pearl;
   }
 }

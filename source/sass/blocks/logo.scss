@@ -2,6 +2,7 @@
   padding: 5px 2px;
   width: 217px;
   height: 60px;
+  // justify-self: flex-start;
 
   &:hover,
   &:focus {
@@ -19,5 +20,6 @@
 
   @media (max-width: 767px) {
     padding: 0;
+    margin-right: auto;
   }
 }

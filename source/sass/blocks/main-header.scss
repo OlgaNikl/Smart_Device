@@ -29,10 +29,12 @@
 
   @media (max-width: 767px) {
     padding: 14px 38px 20px 26px;
+    justify-content: unset;
   }
 }
 
 .main-header__list {
+  justify-self: stretch;
   list-style-type: none;
   margin: 0;
   padding: 0;

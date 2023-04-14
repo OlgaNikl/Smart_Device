@@ -775,8 +775,8 @@ button,
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: #f2f5f7;
-  cursor: pointer;
+  color: transparent;
+  text-shadow: 0 0 0 #f2f5f7;
 }
 
 .modal__form input[type=text]:hover,
@@ -1543,6 +1543,8 @@ button,
 }
 
 .main-header__list {
+  -ms-grid-column-align: stretch;
+  justify-self: stretch;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -1989,7 +1991,7 @@ button,
 }
 
 .advantages {
-  background-color: #f2f5f6;
+  background-color: rgb(248, 253, 255);
 }
 
 .advantages__wrapper {
@@ -2081,7 +2083,7 @@ button,
 }
 
 .about {
-  background-color: #f2f5f6;
+  background-color: rgb(248, 253, 255);
 }
 
 .about__wrapper {
@@ -2276,7 +2278,7 @@ button,
 }
 
 .question-block {
-  background-color: #00b2ff;
+  background-color: #00b3ff;
   position: relative;
 }
 
@@ -2293,30 +2295,28 @@ button,
   z-index: 2;
 }
 
-.question-block__container::after {
-  content: "";
-  position: absolute;
-  top: 246px;
-  left: 350px;
-  background-image: url("../img/paper_airplane.png");
-  background-repeat: no-repeat;
-  width: 510px;
-  height: 285px;
-  z-index: 3;
+.question-block__bg-wrapper {
+  padding-top: 116px;
+  z-index: 11;
+}
+
+.question-block__bg-image {
+  -o-object-fit: contain;
+  object-fit: contain;
 }
 
 .question-block__wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   padding-top: 130px;
   padding-bottom: 248px;
-  padding-right: 20px;
-  padding-left: 20px;
-  max-width: 1240px;
+  padding-right: 40px;
+  padding-left: 30px;
+  max-width: 1280px;
 }
 
 .question-block__container {
@@ -2330,7 +2330,7 @@ button,
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding-top: 30px;
-  padding-left: 18px;
+  padding-left: 24px;
   width: 50%;
 }
 
@@ -2380,7 +2380,8 @@ button,
   font-weight: 400;
   font-size: 16px;
   line-height: 22px;
-  color: #f2f5f7;
+  color: transparent;
+  text-shadow: 0 0 0 #f2f5f7;
 }
 
 .form input[type=text]:hover,
@@ -2546,6 +2547,11 @@ button,
   -webkit-box-shadow: inset 0 0 0 1px #ffffff;
   box-shadow: inset 0 0 0 1px #ffffff;
   border-radius: 2px;
+}
+
+.form .input-message {
+  font-family: inherit;
+  color: #041827;
 }
 
 /* @mixin hover-focus {
@@ -2840,7 +2846,7 @@ button,
   }
 
   .card {
-    max-width: 670px;
+    max-width: 100%;
     min-height: 250px;
   }
 
@@ -2861,7 +2867,7 @@ button,
     display: none;
   }
 
-  .question-block__container::after {
+  .question-block__bg-wrapper {
     display: none;
   }
 
@@ -2898,7 +2904,7 @@ button,
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
-    width: 260px;
+    width: 100%;
   }
 }
 
@@ -2939,6 +2945,9 @@ button,
 
   .main-header__wrapper {
     padding: 14px 38px 20px 26px;
+    -webkit-box-pack: unset;
+    -ms-flex-pack: unset;
+    justify-content: unset;
   }
 
   .main-header__list {
@@ -2961,6 +2970,7 @@ button,
 
   .logo {
     padding: 0;
+    margin-right: auto;
   }
 
   .footer__wrapper {
@@ -3189,7 +3199,7 @@ button,
 
   .about__textblock {
     max-height: 220px;
-    width: 270px;
+    min-width: 270px;
     padding: 0;
   }
 
@@ -3253,6 +3263,10 @@ button,
     color: #ffffff;
   }
 
+  .card {
+    max-width: 100%;
+  }
+
   .card::after {
     width: 40px;
     height: 40px;
@@ -3284,14 +3298,14 @@ button,
   .question-block__title {
     font-size: 30px;
     line-height: 42px;
-    width: 270px;
+    width: 100%;
   }
 
   .question-block__description {
     font-size: 14px;
     line-height: 19px;
     margin-bottom: 34px;
-    width: 270px;
+    width: 100%;
   }
 
   .form {
@@ -3428,11 +3442,6 @@ button,
 
   .about__wrapper::before {
     background-image: url("../img/2022@2x.png");
-    background-size: cover;
-  }
-
-  .question-block__container::after {
-    background-image: url("../img/paper_airplane@2x.png");
     background-size: cover;
   }
 }

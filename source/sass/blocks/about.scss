@@ -1,5 +1,5 @@
 .about {
-  background-color: $color-alice-blue-secodary;
+  background-color: $color-alice-blue-bg;
 }
 
 .about__wrapper {
@@ -156,7 +156,7 @@
 
   @media (max-width: 767px) {
     max-height: 220px;
-    width: 270px;
+    min-width: 270px;
     padding: 0;
   }
 }

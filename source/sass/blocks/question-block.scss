@@ -1,5 +1,5 @@
 .question-block {
-  background-color: $color-deep-sky-blue;
+  background-color: $color-deep-sky-blue-secodary;
   position: relative;
 }
 
@@ -20,35 +20,48 @@
   }
 }
 
-.question-block__container::after {
-  content: "";
-  position: absolute;
-  top: 246px;
-  left: 350px;
-  background-image: url("../img/paper_airplane.png");
-  background-repeat: no-repeat;
-  width: 510px;
-  height: 285px;
-  z-index: 3;
-
-  @media (min-resolution: 2dppx) {
-    background-image: url("../img/paper_airplane@2x.png");
-    background-size: cover;
-  }
+.question-block__bg-wrapper {
+  padding-top: 116px;
+  z-index: 11;
 
   @media (max-width: 1023px) {
     display: none;
   }
 }
 
+.question-block__bg-image {
+  object-fit: contain;
+}
+
+// .question-block__container::after {
+//   content: "";
+//   position: absolute;
+//   top: 246px;
+//   left: 350px;
+//   background-image: url("../img/paper_airplane.png");
+//   background-repeat: no-repeat;
+//   width: 510px;
+//   height: 285px;
+//   z-index: 3;
+
+//   @media (min-resolution: 2dppx) {
+//     background-image: url("../img/paper_airplane@2x.png");
+//     background-size: cover;
+//   }
+
+//   @media (max-width: 1023px) {
+//     display: none;
+//   }
+// }
+
 .question-block__wrapper {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   padding-top: 130px;
   padding-bottom: 248px;
-  padding-right: 20px;
-  padding-left: 20px;
-  max-width: 1240px;
+  padding-right: 40px;
+  padding-left: 30px;
+  max-width: 1280px;
 
   @media (max-width: 1023px) {
     padding: 36px 50px 126px;
@@ -67,7 +80,7 @@
   flex-direction: column;
   flex-wrap: wrap;
   padding-top: 30px;
-  padding-left: 18px;
+  padding-left: 24px;
   width: 50%;
 
   @media (max-width: 1023px) {
@@ -94,7 +107,7 @@
   @media (max-width: 767px) {
     font-size: 30px;
     line-height: 42px;
-    width: 270px;
+    width: 100%;
   }
 }
 
@@ -116,6 +129,6 @@
     font-size: 14px;
     line-height: 19px;
     margin-bottom: 34px;
-    width: 270px;
+    width: 100%;
   }
 }

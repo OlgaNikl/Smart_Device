@@ -4,9 +4,14 @@
   min-height: 650px;
 
   @media (max-width: 1023px) {
-    max-width: 670px;
+    max-width: 100%;
     min-height: 250px;
   }
+
+  @media (max-width: 767px) {
+    max-width: 100%;
+  }
+
 
   &::after {
     content: "";
