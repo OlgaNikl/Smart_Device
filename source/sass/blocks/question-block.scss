@@ -33,27 +33,6 @@
   object-fit: contain;
 }
 
-// .question-block__container::after {
-//   content: "";
-//   position: absolute;
-//   top: 246px;
-//   left: 350px;
-//   background-image: url("../img/paper_airplane.png");
-//   background-repeat: no-repeat;
-//   width: 510px;
-//   height: 285px;
-//   z-index: 3;
-
-//   @media (min-resolution: 2dppx) {
-//     background-image: url("../img/paper_airplane@2x.png");
-//     background-size: cover;
-//   }
-
-//   @media (max-width: 1023px) {
-//     display: none;
-//   }
-// }
-
 .question-block__wrapper {
   display: flex;
   justify-content: space-between;
